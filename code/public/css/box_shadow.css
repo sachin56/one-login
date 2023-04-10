@@ -1,0 +1,12 @@
+.box
+    {
+      width: 150px;
+      border: 1px solid #f6f5f6;
+      padding: 10px;
+    }
+    .box:hover
+    {
+      -moz-box-shadow: 0 0 10px rgb(139, 128, 128);
+      -webkit-box-shadow: 0 0 10px rgb(184, 174, 174);
+      box-shadow: 0 0 10px rgb(167, 64, 64);
+    }
