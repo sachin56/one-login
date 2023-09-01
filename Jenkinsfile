@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Docker Up') {
+      steps {
+        sh 'docker compose up'
+      }
+    }
+
   }
 }
