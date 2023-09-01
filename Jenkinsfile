@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('Docker Up') {
+    stage('show files') {
       steps {
-        sh 'cd one-login_master && docker compose up'
+        sh 'ls -la'
       }
     }
 
