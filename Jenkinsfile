@@ -8,8 +8,19 @@ pipeline {
     }
 
     stage('show files') {
-      steps {
-        sh 'ls -la'
+      parallel {
+        stage('show files') {
+          steps {
+            sh 'ls -la'
+          }
+        }
+
+        stage('composer up') {
+          steps {
+            sh 'docker compose up'
+          }
+        }
+
       }
     }
 
