@@ -9,7 +9,7 @@ pipeline {
 
     stage('Docker Up') {
       steps {
-        sh 'docker compose up'
+        sh 'cd one-login_master && docker compose up'
       }
     }
 
